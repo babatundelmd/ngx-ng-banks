@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-ng-banks": [
+        "dist/ngx-ng-banks/ngx-ng-banks",
+        "dist/ngx-ng-banks"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

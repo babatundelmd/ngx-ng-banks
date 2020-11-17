@@ -119,6 +119,46 @@
           }
         }
       }
+    },
+    "NgxNgBanks": {
+      "projectType": "library",
+      "root": "projects/ngx-ng-banks",
+      "sourceRoot": "projects/ngx-ng-banks/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-ng-banks/tsconfig.lib.json",
+            "project": "projects/ngx-ng-banks/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-ng-banks/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-ng-banks/src/test.ts",
+            "tsConfig": "projects/ngx-ng-banks/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-ng-banks/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-ng-banks/tsconfig.lib.json",
+              "projects/ngx-ng-banks/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-ng-banks"
 }
