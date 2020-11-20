@@ -3,7 +3,10 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class NgBanks {
   public allNgBanks = [
-    ['Access Bank Plc'],
+    [
+      'Access Bank Plc',
+      'https://ik.imagekit.io/oqoufqmrvpu/banklogos/fbn_VMJVnHD-8.png',
+    ],
     ['Citibank Nigeria Limited'],
     ['Ecobank Nigeria Plc'],
     ['Fidelity Bank Plc'],

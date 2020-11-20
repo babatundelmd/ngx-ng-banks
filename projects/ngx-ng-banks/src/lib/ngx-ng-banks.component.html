@@ -1,1 +1,34 @@
-<p>ngx-ng-banks works!</p>
+<div class="select-flags" #selectLogos>
+  <div class="country-flag" tabindex="0" (click)="toggleListBankLogos()">
+    <span
+      *ngIf="showLogos"
+      [ngClass]="{ 'flag-icon-margin-right': showLabels }"
+      class="flag-icon"
+    ></span>
+    <span *ngIf="showLabels" class="country-code">{{
+      getBankName(selectedBank)
+    }}</span>
+    <span *ngIf="showArrow">▾</span>
+  </div>
+  <div class="list-country-flags" *ngIf="isShowBankLogos">
+    <div
+      class="country-flag"
+      tabindex="0"
+      *ngFor="let bank of allNgBanks"
+      (click)="changeSelectedNgBanks(bank)"
+    >
+      <span>
+        <span
+          *ngIf="showLogos"
+          [ngClass]="{ 'flag-icon-margin-right': showLabels }"
+          class="flag-icon"
+          ><img [src]="bank.bankLogo" alt=""
+        /></span>
+        <span *ngIf="showLabels" class="country-code">
+          {{ bank.name }}
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+
