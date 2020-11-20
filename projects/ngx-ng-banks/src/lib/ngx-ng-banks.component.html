@@ -5,9 +5,7 @@
       [ngClass]="{ 'flag-icon-margin-right': showLabels }"
       class="flag-icon"
     ></span>
-    <span *ngIf="showLabels" class="country-code">{{
-      getBankName(selectedBank)
-    }}</span>
+    <span *ngIf="showLabels" class="country-code">{{ selectedBank?.name }}</span>
     <span *ngIf="showArrow">▾</span>
   </div>
   <div class="list-country-flags" *ngIf="isShowBankLogos">
@@ -31,4 +29,3 @@
     </div>
   </div>
 </div>
-

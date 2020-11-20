@@ -30,9 +30,9 @@ export class NgxNgBanksComponent implements OnInit {
   }
 
   allNgBanks: Array<any> = [];
-  selectedBank: string;
+  selectedBank
   customLabels: Bank;
-  // @Input() ngBanks: string[];
+  // @Input() selectedBank: string;
 
   @Input() showLogos = true;
   @Input() showLabels = true;
@@ -84,11 +84,10 @@ export class NgxNgBanksComponent implements OnInit {
     this.unsubscribeOutsideClickSelectLogos();
   }
 
-  public changeSelectedNgBanks(value: string): void {
+  public changeSelectedNgBanks(value: any) {
     this.selectedBank = value;
     this.closeListBankLogos();
-    this.changedBankLogo.emit(this.selectedBank);
-    console.log(value);
+    this.changedBankLogo.emit(this.selectedBank.name);
   }
 
   private subscribeOutsideClickSelectLogos(): void {

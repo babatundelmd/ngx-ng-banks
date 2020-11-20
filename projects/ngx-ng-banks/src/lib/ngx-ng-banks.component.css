@@ -1,16 +1,16 @@
 .select-flags {
   display: inline-block;
   position: relative;
-  color: #50575e;
+  color: black;
   text-align: left;
   width: 300px;
-  background-color: rebeccapurple;
   left: 20%;
+  border: 1px solid black;
 }
 
 .flag-icon img {
   width: 20px;
-  height: 10px;
+  height: 15px;
 }
 .country-flag {
   cursor: pointer;

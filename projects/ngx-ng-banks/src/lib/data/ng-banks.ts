@@ -5,7 +5,7 @@ export class NgBanks {
   public allNgBanks = [
     [
       'Access Bank Plc',
-      'https://ik.imagekit.io/oqoufqmrvpu/banklogos/fbn_VMJVnHD-8.png',
+      'https://ik.imagekit.io/oqoufqmrvpu/banklogos/fbn_6zlV877t4.png',
     ],
     ['Citibank Nigeria Limited'],
     ['Ecobank Nigeria Plc'],
