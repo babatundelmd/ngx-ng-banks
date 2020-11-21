@@ -32,7 +32,6 @@ export class NgxNgBanksComponent implements OnInit {
   allNgBanks: Array<any> = [];
   selectedBank
   customLabels: Bank;
-  // @Input() selectedBank: string;
 
   @Input() showLogos = true;
   @Input() showLabels = true;

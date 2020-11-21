@@ -8,25 +8,32 @@
   border: 1px solid black;
 }
 
-.flag-icon img {
+.bnk-icon img {
   width: 20px;
   height: 15px;
 }
-.country-flag {
+.bank {
   cursor: pointer;
   outline: none;
   white-space: nowrap;
   height: 30px;
 }
 
-.list-country-flags {
+.list-banks{
   width: -moz-available;
   position: absolute;
   max-height: 200px;
   margin-top: 10px;
-  padding: 5px;
+  padding: 8px;
   background: #ffffff;
   border: 1px solid #c7c7c7;
   overflow: auto;
   z-index: 99999;
+}
+
+
+.selected-bank {
+  padding: 8px;
+  text-align: center;
+  margin-top: 5px;
 }

@@ -2,10 +2,10 @@
   <div class="country-flag" tabindex="0" (click)="toggleListBankLogos()">
     <span
       *ngIf="showLogos"
-      [ngClass]="{ 'flag-icon-margin-right': showLabels }"
+      [ngClass]="{ 'flag-icon': showLabels }"
       class="flag-icon"
-    ></span>
-    <span *ngIf="showLabels" class="country-code">{{ selectedBank?.name }}</span>
+    ><img [src]="selectedBank?.bankLogo" alt=""></span>
+    <span *ngIf="showLabels" class="selected-bank">{{ selectedBank?.name }}</span>
     <span *ngIf="showArrow">▾</span>
   </div>
   <div class="list-country-flags" *ngIf="isShowBankLogos">
@@ -29,3 +29,6 @@
     </div>
   </div>
 </div>
+
+
+<input type="text" class="form-control" placeholder="Enter here">
